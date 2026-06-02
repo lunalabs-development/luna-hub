@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luna</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0a0a0a;
+    --card:#111111;
+    --text:#ffffff;
+    --muted:#9ca3af;
+    --accent:#8b5cf6;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+}
+
+.container{
+    text-align:center;
+    max-width:700px;
+    animation:fadeIn .8s ease;
+}
+
+.logo{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(3rem,8vw,5rem);
+    font-weight:700;
+    margin-bottom:16px;
+}
+
+p{
+    color:var(--muted);
+    font-size:1.1rem;
+    line-height:1.6;
+    margin-bottom:32px;
+}
+
+.download-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    background:linear-gradient(135deg,#8b5cf6,#a855f7);
+    color:white;
+    padding:16px 34px;
+    border-radius:14px;
+    font-weight:600;
+    font-size:1rem;
+    transition:.2s;
+}
+
+.download-btn:hover{
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:48px;
+    color:#6b7280;
+    font-size:.9rem;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- EASY TO EDIT -->
+    <div class="logo">🫟</div>
+
+    <h1>Luna</h1>
+
+    <p>
+        The AI assistant built for speed, simplicity, and everyday use.
+    </p>
+
+    <a
+        class="download-btn"
+        href="https://itunes.apple.com/app/shortcuts/id915249334"
+        target="_blank"
+    >
+        Download 2.0
+    </a>
+
+    <a
+        class="download-btn"
+        href="https://your-download-link.com"
+        target="_blank"
+    >
+        Download Imagine 1.1
+    </a>
+
+    <div class="footer">
+        Copyright © 2026 Luna Labs
+    </div>
+
+</div>
+
+</body>
+</html>
